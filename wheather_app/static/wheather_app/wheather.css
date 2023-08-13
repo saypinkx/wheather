@@ -1,0 +1,23 @@
+.contain {
+    display: flex;
+    justify-content: space-between;
+    
+    
+    
+    
+
+
+}
+
+.form {
+    width: 50%;
+    flex-direction: column;
+    text-align: center;
+    background-color: red;
+    
+}
+.info {
+    width: 50%;
+    text-align: center;
+    background-color: blue;
+}

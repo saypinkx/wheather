@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Погода</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'wheather_app/wheather.css' %}">
+</head>
+<body>
+    <div class="contain"> 
+        <div class="form"> 
+<form method="post">
+    {% csrf_token %}
+    {{form}}
+    <button>Login</button>
+</form>
+        </div>
+    <div class="info"> 
+    {% if info is not None %}
+        <h4>{{info.name}}</h4>
+        <h4>{{description.description}}</h4>
+        <h4>Температура - {{main.temp}}</h4>
+        <h4>Ощущается - {{main.feels_like}}</h4>
+        <h4>Минимальная температура - {{main.temp_min}}</h4>
+        <h4>Максимальная температура - {{main.temp_max}}</h4>
+        <h4>Давление - {{main.pressure}}</h4>
+        <h4>Влажность - {{main.humidity}}%</h4>
+
+    {% endif %}
+    </div>
+    </div>
+</body>
+</html>
