@@ -1,0 +1,10 @@
+Описание проекта:
+Реализация приложения погода, которая по введенному городу выдает информацию.
+Минимальный функционал и оформление, мини проектик для взаимодейтсвия с другими api.
+Инструкция по установке для просмотра веб-страницы:
+Первый способ:
+docker build -t sixzerx/wheather .
+docker run --net=host sixzerx/wheather
+Второй способ:
+docker pull sixzerx/wheather
+docker run --net=host sixzerx/wheather
